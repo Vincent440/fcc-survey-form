@@ -1,15 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="./assets/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Short feedback survey</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- freeCodeCamp test script -->
     <script async src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script src="./assets/main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <main class="container">
+      <h1 id="title">Brief feedback survey</h1>
 
-    
-</body>
+      <p id="description">
+        Please take a few moments to help us improve the services we offer by answering a few brief questions. This will only be used to help us improve the service we offer.
+      </p>
+      
+      <form action="POST" id="survey-form">
+        <fieldset>
+          <legend>Required</legend>
+          <label for="name" id="name-label">Name</label>
+          <input required type="text" name="name" id="name" placeholder="Enter your name" />
+
+          <label for="email" id="email-label">Email</label>
+          <input required type="email" name="email" id="email" placeholder="Enter your email" />
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <label for="number" id="number-label">Rate Recent Service <small>( 1 poor - 10 great) <i>optional</i> </small> </label>
+          </legend>
+          <input
+            type="number"
+            name="service-rating"
+            id="number"
+            min="1"
+            max="10"
+            placeholder="10"
+          />
+
+        </fieldset>
+
+        <fieldset>
+          <legend>How likely are you to refer us to a friend?</legend>
+          <div>
+            <input
+              type="radio"
+              id="refer-radio-1"
+              name="refer-a-friend-chance"
+              value="1"
+              checked
+            />
+            <label for="refer-radio-1">1 - Never</label>
+
+            <input
+              type="radio"
+              id="refer-radio-2"
+              name="refer-a-friend-chance"
+              value="2"
+            />
+            <label for="refer-radio-2">2 - Very unlikely</label>
+
+            
+            <input
+              type="radio"
+              id="refer-radio-3"
+              name="refer-a-friend-chance"
+              value="3"
+            />
+            <label for="refer-radio-3">3 - Maybe</label>
+            
+            <input
+              type="radio"
+              id="refer-radio-4"
+              name="refer-a-friend-chance"
+              value="4"
+            />
+            <label for="refer-radio-4">4 - Most Likely</label>
+
+            <input
+              type="radio"
+              id="refer-radio-5"
+              name="refer-a-friend-chance"
+              value="5"
+            />
+            <label for="refer-radio-5">5 - Already have</label>
+
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <label for="dropdown">Would you use our service again in the future?</label>
+          </legend>
+          <select name="repeat-user-dropdown" id="dropdown">
+            <option value="yes">Yes</option>
+            <option value="maybe">Maybe</option>
+            <option value="no">No</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+
+          <legend>How do you like to be contacted? <small>(check all that apply)</small></legend>
+
+          <div>
+            <input type="checkbox" id="email-checkbox" name="contact-methods" value="email" />
+            <label for="email-checkbox">Email</label>
+          </div>
+          <div>
+            <input type="checkbox" id="text-checkbox" name="contact-methods" value="text-message" />
+            <label for="text-checkbox">Text</label>
+          </div>
+          <div>
+            <input type="checkbox" id="phone-call-checkbox" name="contact-methods" value="phone-call" />
+            <label for="phone-call-checkbox">Phone call</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="physical-mail-checkbox" name="contact-methods" value="physical-mail" />
+            <label for="physical-mail-checkbox">Mail</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <label for="comment-area">Additional comments or suggestions?</label>
+          </legend>
+        <textarea
+          form="survey-form"
+          name="comment-area"
+          id="comment-area"
+          placeholder="Please leave feedback here."
+        ></textarea>
+        </fieldset>
+
+
+        <button id="submit" type="submit">Submit</button>
+
+      </form>
+    </main>
+  </body>
 </html>
