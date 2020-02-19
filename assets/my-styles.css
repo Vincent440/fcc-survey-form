@@ -1,0 +1,79 @@
+/* Author: Vincent S Shury - Created: 2-17-20 */
+
+:root {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  background-color: burlywood;
+}
+
+main {
+  text-align: center;
+  background-color: goldenrod;
+}
+
+header {
+  text-align: center;
+  padding: .5rem 1rem;
+}
+
+/* Box main elements on HTML */
+main > * {
+  border: solid 0.2rem black;
+  border-radius: 0.75rem;
+  background-color: palevioletred;
+}
+
+/* Box main form elements */
+main > form > div {
+  margin: 1rem;
+  padding: .75rem .5rem;
+  border: groove 0.2rem rebeccapurple;
+  border-radius: 0.75rem;
+  background-color: royalblue;
+}
+main > form > div > input,
+main > form > div > select {
+  background-color: tomato;
+  border-radius: .25rem;
+}
+main > form > div > label,
+main > form > div > p,
+main > form > div > div > label {
+  background-color: violet;
+  margin: 1.25rem;
+}
+#comment-area {
+  min-width: 50vmin;
+  max-width: 90vw;
+  border-radius: .25rem;
+  padding: .5rem;
+  background-color: yellowgreen;
+}
+#submit {
+  border: 0;
+  margin: .75rem .5rem;
+  line-height: 2.5;
+  padding: 0 1em;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: .5rem;
+  background-color: rgba(220, 0, 0, 1);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+#submit:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+#submit:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
