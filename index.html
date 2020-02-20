@@ -9,25 +9,47 @@
   <link rel="stylesheet" href="./assets/normalize.css">
   <link rel="stylesheet" href="./assets/my-styles.css" />
   <!-- freeCodeCamp test script -->
-  <script async src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <!-- <script async src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </head>
 <body>
-  <main class="outer-grid">
 
+  <!-- Header with title -->
+  <header>
     <h1 id="title">Brief feedback survey</h1>
     <p id="description">
       Please take a few moments to help us improve the services we offer by answering a few brief questions. This will only be used to help us improve the service we offer.
     </p>
+  </header>
+  <!-- HEADER CLOSING -->
+
+  <!-- Main -->
+  <main class="container">
+
+    <!-- Survey form -->
     <form action="POST" id="survey-form">
 
-      <label for="name" id="name-label">Name</label>
-      <input required type="text" name="name" id="name" placeholder="Enter your name" />
-      <label for="email" id="email-label">Email</label>
-      <input required type="email" name="email" id="email" placeholder="Enter your email" />
+      <!-- NAME input -->
+      <div>
+        <label for="name" id="name-label">Name</label>
+        <input required type="text" name="name" id="name" placeholder="Enter your name" />
+      </div>
+      <!-- NAME CLOSING -->
 
-      <label for="number" id="number-label">Rate Recent Service <small>( 1 poor - 10 great) <i>optional</i> </small> </label>
-      <input type="number" name="service-rating" id="number" min="1" max="10" placeholder="10" />
+      <!-- EMAIL input -->
+      <div>
+        <label for="email" id="email-label">Email</label>
+        <input required type="email" name="email" id="email" placeholder="Enter your email" />
+      </div>
+      <!-- EMAIL CLOSING -->
 
+      <!-- NUMBER input -->
+      <div>
+        <label for="number" id="number-label">Rate Recent Service <small>( 1 poor - 10 great) <i>optional</i> </small> </label>
+        <input type="number" name="service-rating" id="number" min="1" max="10" placeholder="10" />
+      </div>
+      <!-- NUMBER CLOSING -->
+
+      <!-- RADIOS input -->
       <div>
         <p>How likely are you to refer us to a friend?</p>
         <input type="radio" id="refer-radio-1" name="refer-a-friend-chance" value="1" checked />
@@ -41,14 +63,20 @@
         <input type="radio" id="refer-radio-5" name="refer-a-friend-chance" value="5" />
         <label for="refer-radio-5">5 - Already have</label>
       </div>
+      <!-- RADIOS CLOSING -->
 
-      <label for="dropdown">Would you use our service again in the future?</label>
-      <select name="repeat-user-dropdown" id="dropdown">
-        <option value="yes">Yes</option>
-        <option value="maybe">Maybe</option>
-        <option value="no">No</option>
-      </select>
+      <!-- DROPDOWNS input -->
+      <div>
+        <label for="dropdown">Would you use our service again in the future?</label>
+        <select name="repeat-user-dropdown" id="dropdown">
+          <option value="yes">Yes</option>
+          <option value="maybe">Maybe</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <!-- DROPDOWNS CLOSING -->
 
+      <!-- CHECKBOXES Inputs -->
       <div>
         <p>How do you like to be contacted? <small>(check all that apply)</small></p>
 
@@ -64,13 +92,22 @@
         <input type="checkbox" id="physical-mail-checkbox" name="contact-methods" value="physical-mail" />
         <label for="physical-mail-checkbox">Mail</label>
       </div>
+      <!-- CHECKBOXES CLOSING -->
 
-      <label for="comment-area">Additional comments or suggestions?</label>
-      <textarea form="survey-form" name="comment-area" id="comment-area" placeholder="Please leave feedback here."></textarea>
+      <!-- TEXTAREA Input -->
+      <div>
+        <label for="comment-area">Additional comments or suggestions?</label>
+        <textarea form="survey-form" name="comment-area" id="comment-area" placeholder="Please leave feedback here."></textarea>
+      </div>
+      <!-- TEXTAREA CLOSING -->
+
+      <!-- Submit button -->
       <button id="submit" type="submit">Submit</button>
-    </form>
 
+    </form>
+    <!-- FORM CLOSING -->
   </main>
+  <!-- MAIN CLOSING -->
 </body>
 
 </html>
