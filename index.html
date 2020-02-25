@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Short feedback survey</title>
+  <title>Site Survey</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/normalize.css">
   <link rel="stylesheet" href="./assets/my-styles.css" />
@@ -13,43 +13,48 @@
 </head>
 <body>
 
-  <!-- Header with title -->
-  <header>
-    <h1 id="title">Brief feedback survey</h1>
-    <p id="description">
-      Please take a few moments to help us improve the services we offer by answering a few brief questions. This will only be used to help us improve the service we offer.
-    </p>
-  </header>
-  <!-- HEADER CLOSING -->
+  <!-- Header Start -->
+  <header id="main-heading">
+    <!-- Title Start -->
+    <h1 id="title">Site Feedback</h1>
+    <!-- End -->
 
-  <!-- Main -->
+    <!-- Description Start -->
+    <p id="description">
+      Please take a few moments to provide short feedback on the site you just viewed.
+    </p>
+    <!-- End -->
+  </header>
+  <!-- Header End -->
+
+  <!-- Main Start -->
   <main class="container">
 
-    <!-- Survey form -->
+    <!-- Form Start-->
     <form action="POST" id="survey-form">
 
-      <!-- NAME input -->
+      <!-- Name Start -->
       <div>
         <label for="name" id="name-label">Name</label>
         <input required type="text" name="name" id="name" placeholder="Enter your name" />
       </div>
-      <!-- NAME CLOSING -->
+      <!-- End -->
 
-      <!-- EMAIL input -->
+      <!-- Email Start-->
       <div>
         <label for="email" id="email-label">Email</label>
         <input required type="email" name="email" id="email" placeholder="Enter your email" />
       </div>
-      <!-- EMAIL CLOSING -->
+      <!-- End -->
 
-      <!-- NUMBER input -->
+      <!-- Number Start -->
       <div>
         <label for="number" id="number-label">Rate Recent Service <small>( 1 poor - 10 great) <i>optional</i> </small> </label>
         <input type="number" name="service-rating" id="number" min="1" max="10" placeholder="10" />
       </div>
-      <!-- NUMBER CLOSING -->
+      <!-- End -->
 
-      <!-- RADIOS input -->
+      <!-- Radio-Input Start -->
       <div>
         <p>How likely are you to refer us to a friend?</p>
         <input type="radio" id="refer-radio-1" name="refer-a-friend-chance" value="1" checked />
@@ -63,9 +68,9 @@
         <input type="radio" id="refer-radio-5" name="refer-a-friend-chance" value="5" />
         <label for="refer-radio-5">5 - Already have</label>
       </div>
-      <!-- RADIOS CLOSING -->
+      <!-- End -->
 
-      <!-- DROPDOWNS input -->
+      <!-- Dropdown-Select Start -->
       <div>
         <label for="dropdown">Would you use our service again in the future?</label>
         <select name="repeat-user-dropdown" id="dropdown">
@@ -74,9 +79,9 @@
           <option value="no">No</option>
         </select>
       </div>
-      <!-- DROPDOWNS CLOSING -->
+      <!-- End -->
 
-      <!-- CHECKBOXES Inputs -->
+      <!-- Checkbox-Input Start -->
       <div>
         <p>How do you like to be contacted? <small>(check all that apply)</small></p>
 
@@ -92,22 +97,22 @@
         <input type="checkbox" id="physical-mail-checkbox" name="contact-methods" value="physical-mail" />
         <label for="physical-mail-checkbox">Mail</label>
       </div>
-      <!-- CHECKBOXES CLOSING -->
+      <!-- End -->
 
-      <!-- TEXTAREA Input -->
+      <!-- Textarea Start -->
       <div>
         <label for="comment-area">Additional comments or suggestions?</label>
         <textarea form="survey-form" name="comment-area" id="comment-area" placeholder="Please leave feedback here."></textarea>
       </div>
-      <!-- TEXTAREA CLOSING -->
+      <!-- End -->
 
-      <!-- Submit button -->
+      <!-- Submit Button -->
       <button id="submit" type="submit">Submit</button>
 
     </form>
-    <!-- FORM CLOSING -->
+    <!-- FORM End -->
   </main>
-  <!-- MAIN CLOSING -->
+  <!-- MAIN End -->
 </body>
 
 </html>

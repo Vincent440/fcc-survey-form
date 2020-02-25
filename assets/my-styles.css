@@ -1,9 +1,34 @@
 /* Author: Vincent S Shury - Created: 2-17-20 */
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: burlywood;
+  background-color: slategrey;
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
   padding: 1em;
+}
+
+#main-heading {
+  width: 100%;
+  margin: 0em;
+  text-align: center;
+  border: .25em inset darkred;
+}
+
+#title {
+  border: 1px solid black;
+  font-size: 3em;
+}
+
+#description {
+  border: 1px solid black;
+  padding:.5em 1em;
+}
+
+main.container {
+  margin: 0% 25%;
+}
+
+#form {
+  padding: .5em; 
 }
