@@ -1,5 +1,77 @@
 /* Author: Vincent S Shury - Created: 2-17-20 */
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: slategrey;
+  background-color: #6c8ead;
+}
+#title {
+  text-align: center;
+}
+#description-text {
+  margin: auto;
+  max-width: 550px;
+  text-align: center;
+}
+input[type=text],input[type=email],input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+#submit {
+  background-color:#a23e48;
+  color: white;
+  margin-top:10px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+#submit:hover {
+  background-color: #ff3c38;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0em auto;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .col-25, .col-75, #submit {
+    width: 100%;
+    margin-top: 0;
+  }
 }

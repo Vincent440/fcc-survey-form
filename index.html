@@ -14,102 +14,138 @@
 <body>
   
   <!-- Main Start -->
+  
+  <!-- Title Start -->
+  <h1 id="title">Site Feedback</h1>
+  <!-- End -->
+  <!-- Description Start -->
+  <div id="description-text">
+    <p id="description">
+      Please provide both your name and email before answering the following questions. Feel free to leave additional feedback at the end of the form.
+    </p>
+    <p>
+      Thank you for taking the time to complete this survey.
+    </p>
+  </div>
+  <!--<Description /> -->
+  
   <main class="container">
-
-      <!-- <Header> -->
-      <header id="title-header">
-
-        <!-- Title Start -->
-        <h1 id="title">Site Feedback</h1>
-        <!-- End -->
-    
-        <!-- Description Start -->
-        <div class="description-text">
-          <p id="description">
-            Please provide both your name and email before answering the following questions. Feel free to leave additional feedback at the end of the form.
-          </p>
-          <p>
-            Thank you for taking the time to complete this survey.
-          </p>
-        </div>
-        <!--<Description /> -->
-
-      </header>
-      <!-- <Header /> -->
-
       <!-- Form Start-->
       <form action="POST" id="survey-form">
 
         <!-- Name Start -->
-        <div class="input-wrapper" id="name-wrapper">
-          <label for="name" id="name-label">Name</label>
-          <input required type="text" name="name" id="name" placeholder="Enter your name" />
+        <div class="row">
+
+          <div class="col-25">
+            <label for="name" id="name-label">Name</label>
+          </div>
+
+          <div class="col-75">
+            <input required type="text" name="name" id="name" placeholder="Enter your name" />
+          </div>
+
         </div>
         <!-- End -->
 
         <!-- Email Start-->
-        <div class="input-wrapper" id="email-wrapper">
-          <label for="email" id="email-label">Email</label>
-          <input required type="email" name="email" id="email" placeholder="Enter your email" />
+        <div class="row">
+
+          <div class="col-25">
+            <label for="email" id="email-label">Email</label>
+          </div>
+
+          <div class="col-75">
+            <input required type="email" name="email" id="email" placeholder="Enter your email" />
+          </div>
+
         </div>
         <!-- End -->
 
         <!-- Number Start -->
-        <div class="input-wrapper" id="number-wrapper">
-          <label for="number" id="number-label">Rate Recent Service <small>( 1 poor - 10 great) <i>optional</i> </small> </label>
-          <input type="number" name="service-rating" id="number" min="1" max="10" placeholder="10" />
+        <div class="row">
+          <div class="col-75">
+            <label for="number" id="number-label">Rate Recent Service <small>( 1 poor - 10 great) <i>optional</i> </small> </label>
+          </div>
+          <div class="col-25">
+            <input type="number" name="service-rating" id="number" min="1" max="10" placeholder="10" />
+          </div>
         </div>
         <!-- End -->
 
         <!-- Radio-Input Start -->
-        <div class="input-wrapper" id="radio-wrapper">
-          <p>How easy was the website to navigate? (1 - Extremely Difficult) - (5 - Extremely Easy)</p>
-          <input type="radio" id="rating-radio-1" name="rating-radios" value="1" checked />
-          <label for="rating-radio-1">1 - Extremely Difficult</label>
-          <input type="radio" id="rating-radio-2" name="rating-radios" value="2" />
-          <label for="rating-radio-2">2 - Very unlikely</label>
-          <input type="radio" id="rating-radio-3" name="rating-radios" value="3" />
-          <label for="rating-radio-3">3 - Easy</label>
-          <input type="radio" id="rating-radio-4" name="rating-radios" value="4" />
-          <label for="rating-radio-4">4 - Very easy</label>
-          <input type="radio" id="rating-radio-5" name="rating-radios" value="5" />
-          <label for="rating-radio-5">5 - Extremely Easy</label>
+        <div class="row">
+          <div class="row">          
+            <div class="row">
+              <p>How easy was the website to navigate? ( 1 - 5 )</p>
+            </div>          
+            <input type="radio" id="rating-radio-1" name="rating-radios" value="1" checked />
+            <label for="rating-radio-1">1 - Extremely Difficult</label>
+            <input type="radio" id="rating-radio-2" name="rating-radios" value="2" />
+            <label for="rating-radio-2">2 - Very unlikely</label>
+            <input type="radio" id="rating-radio-3" name="rating-radios" value="3" />
+            <label for="rating-radio-3">3 - Easy</label>
+            <input type="radio" id="rating-radio-4" name="rating-radios" value="4" />
+            <label for="rating-radio-4">4 - Very easy</label>
+            <input type="radio" id="rating-radio-5" name="rating-radios" value="5" />
+            <label for="rating-radio-5">5 - Extremely Easy</label>
+          </div>
         </div>
         <!-- End -->
 
         <!-- Dropdown-Select Start -->
-        <div class="input-wrapper" id="dropdown-wrapper">
-          <label for="dropdown">Would you revisit the website again if you had the chance to choose between that and other similar options?</label>
-          <select name="repeat-user-dropdown" id="dropdown">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="n/a">N/A</option>
-          </select>
+        <div class="row">
+
+          <div class="col-75">
+            <label for="dropdown">Would you revisit the website again if you had the chance to choose between that and other similar options?</label>
+          </div>
+
+          <div class="col-25">
+            <select name="repeat-user-dropdown" id="dropdown">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="n/a">N/A</option>
+            </select>
+          </div>
+
         </div>
         <!-- End -->
 
         <!-- Checkbox-Input Start -->
-        <div class="input-wrapper" id="checkbox-wrapper">
-          <p>If you would us to contact you, Please check the best method to do so. <small>(Choose any that apply)</small></p>
+        <div class="row">
 
-          <input type="checkbox" id="email-checkbox" name="contact-methods" value="email" />
-          <label for="email-checkbox">Email</label>
+          <div class="col-75">
+            <p>If you would us to contact you, Please check the best method to do so. <small>(Choose any that apply)</small></p>
+          </div>
 
-          <input type="checkbox" id="text-checkbox" name="contact-methods" value="text-message" />
-          <label for="text-checkbox">Text</label>
+          <div class="col-25">
+            <div class="row">
+              <input type="checkbox" id="email-checkbox" name="contact-methods" value="email" />
+              <label for="email-checkbox">Email</label>
+            </div>
+            <div class="row">
+              <input type="checkbox" id="text-checkbox" name="contact-methods" value="text-message" />
+              <label for="text-checkbox">Text</label>
+            </div>
+          </div>
 
         </div>
         <!-- End -->
 
         <!-- Textarea Start -->
-        <div class="input-wrapper" id="comment-wrapper">
-          <label for="comment-area">Additional comments or suggestions?</label>
-          <textarea form="survey-form" name="comment-area" id="comment-area" placeholder="Please leave feedback here."></textarea>
+        <div class="row">
+          <div class="row">
+            <label for="comment-area">Additional comments or suggestions?</label>
+          </div>
+          <div class="row">
+            <textarea form="survey-form" name="comment-area" id="comment-area" placeholder="Please leave feedback here."></textarea>
+          </div>
         </div>
         <!-- End -->
 
         <!-- Submit Button -->
-        <button id="submit" type="submit">Submit</button>
+        <div class="row">
+          <button id="submit" type="submit">Submit</button>
+        </div>
 
       </form>
       <!-- FORM End -->
