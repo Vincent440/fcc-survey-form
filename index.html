@@ -14,15 +14,21 @@
 <body>
 
   <!-- Header Start -->
-  <header id="main-heading">
+  <header id="title-header">
     <!-- Title Start -->
     <h1 id="title">Site Feedback</h1>
     <!-- End -->
 
     <!-- Description Start -->
-    <p id="description">
-      Please take a few moments to provide short feedback on the site you just viewed.
-    </p>
+    <div class="description-text">
+      <p id="description">
+        Please provide both your name and email before answering the following questions. Feel free to leave additional feedback at the end of the form.
+      </p>
+      <p>
+        Thank you for taking the time to complete this survey.
+      </p>
+    </div>
+
     <!-- End -->
   </header>
   <!-- Header End -->
@@ -56,34 +62,34 @@
 
       <!-- Radio-Input Start -->
       <div>
-        <p>How likely are you to refer us to a friend?</p>
-        <input type="radio" id="refer-radio-1" name="refer-a-friend-chance" value="1" checked />
-        <label for="refer-radio-1">1 - Never</label>
-        <input type="radio" id="refer-radio-2" name="refer-a-friend-chance" value="2" />
-        <label for="refer-radio-2">2 - Very unlikely</label>
-        <input type="radio" id="refer-radio-3" name="refer-a-friend-chance" value="3" />
-        <label for="refer-radio-3">3 - Maybe</label>
-        <input type="radio" id="refer-radio-4" name="refer-a-friend-chance" value="4" />
-        <label for="refer-radio-4">4 - Most Likely</label>
-        <input type="radio" id="refer-radio-5" name="refer-a-friend-chance" value="5" />
-        <label for="refer-radio-5">5 - Already have</label>
+        <p>How easy was the website to navigate? (1 - Extremely Difficult) - (5 - Extremely Easy)</p>
+        <input type="radio" id="rating-radio-1" name="rating-radios" value="1" checked />
+        <label for="rating-radio-1">1 - Extremely Difficult</label>
+        <input type="radio" id="rating-radio-2" name="rating-radios" value="2" />
+        <label for="rating-radio-2">2 - Very unlikely</label>
+        <input type="radio" id="rating-radio-3" name="rating-radios" value="3" />
+        <label for="rating-radio-3">3 - Easy</label>
+        <input type="radio" id="rating-radio-4" name="rating-radios" value="4" />
+        <label for="rating-radio-4">4 - Very easy</label>
+        <input type="radio" id="rating-radio-5" name="rating-radios" value="5" />
+        <label for="rating-radio-5">5 - Extremely Easy</label>
       </div>
       <!-- End -->
 
       <!-- Dropdown-Select Start -->
       <div>
-        <label for="dropdown">Would you use our service again in the future?</label>
+        <label for="dropdown">Would you revisit that website again if you had the chance to choose between that site and other similar options?</label>
         <select name="repeat-user-dropdown" id="dropdown">
           <option value="yes">Yes</option>
-          <option value="maybe">Maybe</option>
           <option value="no">No</option>
+          <option value="n/a">N/A</option>
         </select>
       </div>
       <!-- End -->
 
       <!-- Checkbox-Input Start -->
       <div>
-        <p>How do you like to be contacted? <small>(check all that apply)</small></p>
+        <p>If you would us to contact you, Please check the best method to do so. <small>(Choose any that apply)</small></p>
 
         <input type="checkbox" id="email-checkbox" name="contact-methods" value="email" />
         <label for="email-checkbox">Email</label>
@@ -91,11 +97,6 @@
         <input type="checkbox" id="text-checkbox" name="contact-methods" value="text-message" />
         <label for="text-checkbox">Text</label>
 
-        <input type="checkbox" id="phone-call-checkbox" name="contact-methods" value="phone-call" />
-        <label for="phone-call-checkbox">Phone call</label>
-
-        <input type="checkbox" id="physical-mail-checkbox" name="contact-methods" value="physical-mail" />
-        <label for="physical-mail-checkbox">Mail</label>
       </div>
       <!-- End -->
 
