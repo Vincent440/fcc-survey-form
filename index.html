@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="./assets/normalize.css">
   <link rel="stylesheet" href="./assets/styles.css" />
   <!-- freeCodeCamp test script -->
-  <!-- <script async src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  <script async src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
-  
+
   <!-- Main Start -->
-  
+
   <!-- Title Start -->
-  <h1 id="title">Site Feedback</h1>
+  <h1 id="title">Site Feedback Form</h1>
   <!-- End -->
   <!-- Description Start -->
   <div id="description-text">
@@ -28,13 +28,13 @@
     </p>
   </div>
   <!--<Description /> -->
-  
+
   <main class="container">
       <!-- Form Start-->
       <form action="POST" id="survey-form">
 
         <!-- Name Start -->
-        <div class="row">
+        <div class="row line-after">
 
           <div class="col-25">
             <label for="name" id="name-label">Name</label>
@@ -48,7 +48,7 @@
         <!-- End -->
 
         <!-- Email Start-->
-        <div class="row">
+        <div class="row line-after">
 
           <div class="col-25">
             <label for="email" id="email-label">Email</label>
@@ -62,7 +62,7 @@
         <!-- End -->
 
         <!-- Number Start -->
-        <div class="row">
+        <div class="row line-after">
           <div class="col-75">
             <label for="number" id="number-label">Rate Recent Service <small>( 1 poor - 10 great) <i>optional</i> </small> </label>
           </div>
@@ -73,33 +73,49 @@
         <!-- End -->
 
         <!-- Radio-Input Start -->
-        <div class="row">
-          <div class="row">          
+        <div class="row line-after">
+          <div class="row">
             <div class="row">
               <p>How easy was the website to navigate? ( 1 - 5 )</p>
-            </div>          
-            <input type="radio" id="rating-radio-1" name="rating-radios" value="1" checked />
-            <label for="rating-radio-1">1 - Extremely Difficult</label>
-            <input type="radio" id="rating-radio-2" name="rating-radios" value="2" />
-            <label for="rating-radio-2">2 - Very unlikely</label>
-            <input type="radio" id="rating-radio-3" name="rating-radios" value="3" />
-            <label for="rating-radio-3">3 - Easy</label>
-            <input type="radio" id="rating-radio-4" name="rating-radios" value="4" />
-            <label for="rating-radio-4">4 - Very easy</label>
-            <input type="radio" id="rating-radio-5" name="rating-radios" value="5" />
-            <label for="rating-radio-5">5 - Extremely Easy</label>
+            </div>
+
+            <div class="col-20">
+              <input type="radio" id="rating-radio-1" name="rating-radios" value="1" checked />
+              <label for="rating-radio-1">1 - Very Difficult</label>
+            </div>
+
+            <div class="col-20">
+              <input type="radio" id="rating-radio-2" name="rating-radios" value="2" />
+              <label for="rating-radio-2">2 - Difficult</label>
+            </div>
+
+            <div class="col-20">
+              <input type="radio" id="rating-radio-3" name="rating-radios" value="3" />
+              <label for="rating-radio-3">3 - Nuetral</label>
+            </div>
+
+            <div class="col-20">
+              <input type="radio" id="rating-radio-4" name="rating-radios" value="4" />
+              <label for="rating-radio-4">4 - Easy</label>
+            </div>
+
+            <div class="col-20">
+              <input type="radio" id="rating-radio-5" name="rating-radios" value="5" />
+              <label for="rating-radio-5">5 - Very Easy</label>
+            </div>
+
           </div>
         </div>
         <!-- End -->
 
         <!-- Dropdown-Select Start -->
-        <div class="row">
+        <div class="row line-after">
 
-          <div class="col-75">
+          <div class="col-80">
             <label for="dropdown">Would you revisit the website again if you had the chance to choose between that and other similar options?</label>
           </div>
 
-          <div class="col-25">
+          <div class="col-20">
             <select name="repeat-user-dropdown" id="dropdown">
               <option value="yes">Yes</option>
               <option value="no">No</option>
@@ -111,13 +127,13 @@
         <!-- End -->
 
         <!-- Checkbox-Input Start -->
-        <div class="row">
+        <div class="row line-after">
 
-          <div class="col-75">
+          <div class="col-80">
             <p>If you would us to contact you, Please check the best method to do so. <small>(Choose any that apply)</small></p>
           </div>
 
-          <div class="col-25">
+          <div class="col-20">
             <div class="row">
               <input type="checkbox" id="email-checkbox" name="contact-methods" value="email" />
               <label for="email-checkbox">Email</label>
@@ -132,7 +148,7 @@
         <!-- End -->
 
         <!-- Textarea Start -->
-        <div class="row">
+        <div class="row line-after">
           <div class="row">
             <label for="comment-area">Additional comments or suggestions?</label>
           </div>

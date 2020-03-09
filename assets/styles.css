@@ -8,23 +8,39 @@ body {
 }
 #title {
   text-align: center;
+  font-size: 2.75em;
+  border-bottom: 2px solid #ff8c42;
+  padding-bottom: .5em;
+  margin: 1em;
 }
 #description-text {
   margin: auto;
   max-width: 550px;
   text-align: center;
+  font-size: larger;
+  line-height: 1.5;
+}
+#survey-form {
+  border-left: 2px solid black;
+  padding: 10px;
+}
+.line-after {
+  padding: 1em .5em;
+  margin-left: 0em;
+  border-bottom: 2px solid #ff3c38;
 }
 input[type=text],input[type=email],input[type=number], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   resize: vertical;
 }
 
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
+  font-size: large;
 }
 
 #submit {
@@ -32,10 +48,12 @@ label {
   color: white;
   margin-top:10px;
   padding: 15px 30px;
-  border: none;
-  border-radius: 4px;
+  border: 2px solid #ff8c42;
+  border-radius: 10px;
   cursor: pointer;
   float: right;
+  font-size: larger;
+
 }
 
 #submit:hover {
@@ -43,13 +61,17 @@ label {
 }
 
 .container {
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: #f2f2f2;
   padding: 20px;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0em auto;
 }
-
+.col-20 {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
 .col-25 {
   float: left;
   width: 25%;
@@ -58,6 +80,12 @@ label {
 .col-75 {
   float: left;
   width: 75%;
+  margin-top: 6px;
+}
+
+.col-80 {
+  float: left;
+  width: 80%;
   margin-top: 6px;
 }
 
@@ -70,8 +98,11 @@ label {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .col-25, .col-75, #submit {
+  .col-25, .col-20, .col-75 {
     width: 100%;
     margin-top: 0;
+  }
+  #submit {
+    width: 100%;
   }
 }
