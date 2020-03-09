@@ -8,10 +8,11 @@ body {
 }
 #title {
   text-align: center;
-  font-size: 2.75em;
+  font-size: 3em;
   border-bottom: 2px solid #ff8c42;
   padding-bottom: .5em;
-  margin: 1em;
+  margin-left: .5em;
+  margin-right: .5em;
 }
 #description-text {
   margin: auto;
@@ -21,14 +22,17 @@ body {
   line-height: 1.5;
 }
 #survey-form {
-  border-left: 2px solid black;
   padding: 10px;
 }
 .line-after {
   padding: 1em .5em;
   margin-left: 0em;
-  border-bottom: 2px solid #ff3c38;
+  border-bottom: 2px solid #ff8c42;
 }
+.font-shadow {
+  text-shadow: 0.03em 0.03em 0 rgb(43, 43, 43), 0.06em 0.06em 0 #838383;
+}
+
 input[type=text],input[type=email],input[type=number], select, textarea {
   width: 100%;
   padding: 12px;
