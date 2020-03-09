@@ -7,113 +7,114 @@
   <title>Site Survey</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/normalize.css">
-  <link rel="stylesheet" href="./assets/my-styles.css" />
+  <link rel="stylesheet" href="./assets/styles.css" />
   <!-- freeCodeCamp test script -->
   <!-- <script async src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </head>
 <body>
-
-  <!-- Header Start -->
-  <header id="title-header">
-    <!-- Title Start -->
-    <h1 id="title">Site Feedback</h1>
-    <!-- End -->
-
-    <!-- Description Start -->
-    <div class="description-text">
-      <p id="description">
-        Please provide both your name and email before answering the following questions. Feel free to leave additional feedback at the end of the form.
-      </p>
-      <p>
-        Thank you for taking the time to complete this survey.
-      </p>
-    </div>
-
-    <!-- End -->
-  </header>
-  <!-- Header End -->
-
+  
   <!-- Main Start -->
   <main class="container">
 
-    <!-- Form Start-->
-    <form action="POST" id="survey-form">
+      <!-- <Header> -->
+      <header id="title-header">
 
-      <!-- Name Start -->
-      <div>
-        <label for="name" id="name-label">Name</label>
-        <input required type="text" name="name" id="name" placeholder="Enter your name" />
-      </div>
-      <!-- End -->
+        <!-- Title Start -->
+        <h1 id="title">Site Feedback</h1>
+        <!-- End -->
+    
+        <!-- Description Start -->
+        <div class="description-text">
+          <p id="description">
+            Please provide both your name and email before answering the following questions. Feel free to leave additional feedback at the end of the form.
+          </p>
+          <p>
+            Thank you for taking the time to complete this survey.
+          </p>
+        </div>
+        <!--<Description /> -->
 
-      <!-- Email Start-->
-      <div>
-        <label for="email" id="email-label">Email</label>
-        <input required type="email" name="email" id="email" placeholder="Enter your email" />
-      </div>
-      <!-- End -->
+      </header>
+      <!-- <Header /> -->
 
-      <!-- Number Start -->
-      <div>
-        <label for="number" id="number-label">Rate Recent Service <small>( 1 poor - 10 great) <i>optional</i> </small> </label>
-        <input type="number" name="service-rating" id="number" min="1" max="10" placeholder="10" />
-      </div>
-      <!-- End -->
+      <!-- Form Start-->
+      <form action="POST" id="survey-form">
 
-      <!-- Radio-Input Start -->
-      <div>
-        <p>How easy was the website to navigate? (1 - Extremely Difficult) - (5 - Extremely Easy)</p>
-        <input type="radio" id="rating-radio-1" name="rating-radios" value="1" checked />
-        <label for="rating-radio-1">1 - Extremely Difficult</label>
-        <input type="radio" id="rating-radio-2" name="rating-radios" value="2" />
-        <label for="rating-radio-2">2 - Very unlikely</label>
-        <input type="radio" id="rating-radio-3" name="rating-radios" value="3" />
-        <label for="rating-radio-3">3 - Easy</label>
-        <input type="radio" id="rating-radio-4" name="rating-radios" value="4" />
-        <label for="rating-radio-4">4 - Very easy</label>
-        <input type="radio" id="rating-radio-5" name="rating-radios" value="5" />
-        <label for="rating-radio-5">5 - Extremely Easy</label>
-      </div>
-      <!-- End -->
+        <!-- Name Start -->
+        <div class="input-wrapper" id="name-wrapper">
+          <label for="name" id="name-label">Name</label>
+          <input required type="text" name="name" id="name" placeholder="Enter your name" />
+        </div>
+        <!-- End -->
 
-      <!-- Dropdown-Select Start -->
-      <div>
-        <label for="dropdown">Would you revisit that website again if you had the chance to choose between that site and other similar options?</label>
-        <select name="repeat-user-dropdown" id="dropdown">
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-          <option value="n/a">N/A</option>
-        </select>
-      </div>
-      <!-- End -->
+        <!-- Email Start-->
+        <div class="input-wrapper" id="email-wrapper">
+          <label for="email" id="email-label">Email</label>
+          <input required type="email" name="email" id="email" placeholder="Enter your email" />
+        </div>
+        <!-- End -->
 
-      <!-- Checkbox-Input Start -->
-      <div>
-        <p>If you would us to contact you, Please check the best method to do so. <small>(Choose any that apply)</small></p>
+        <!-- Number Start -->
+        <div class="input-wrapper" id="number-wrapper">
+          <label for="number" id="number-label">Rate Recent Service <small>( 1 poor - 10 great) <i>optional</i> </small> </label>
+          <input type="number" name="service-rating" id="number" min="1" max="10" placeholder="10" />
+        </div>
+        <!-- End -->
 
-        <input type="checkbox" id="email-checkbox" name="contact-methods" value="email" />
-        <label for="email-checkbox">Email</label>
+        <!-- Radio-Input Start -->
+        <div class="input-wrapper" id="radio-wrapper">
+          <p>How easy was the website to navigate? (1 - Extremely Difficult) - (5 - Extremely Easy)</p>
+          <input type="radio" id="rating-radio-1" name="rating-radios" value="1" checked />
+          <label for="rating-radio-1">1 - Extremely Difficult</label>
+          <input type="radio" id="rating-radio-2" name="rating-radios" value="2" />
+          <label for="rating-radio-2">2 - Very unlikely</label>
+          <input type="radio" id="rating-radio-3" name="rating-radios" value="3" />
+          <label for="rating-radio-3">3 - Easy</label>
+          <input type="radio" id="rating-radio-4" name="rating-radios" value="4" />
+          <label for="rating-radio-4">4 - Very easy</label>
+          <input type="radio" id="rating-radio-5" name="rating-radios" value="5" />
+          <label for="rating-radio-5">5 - Extremely Easy</label>
+        </div>
+        <!-- End -->
 
-        <input type="checkbox" id="text-checkbox" name="contact-methods" value="text-message" />
-        <label for="text-checkbox">Text</label>
+        <!-- Dropdown-Select Start -->
+        <div class="input-wrapper" id="dropdown-wrapper">
+          <label for="dropdown">Would you revisit the website again if you had the chance to choose between that and other similar options?</label>
+          <select name="repeat-user-dropdown" id="dropdown">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="n/a">N/A</option>
+          </select>
+        </div>
+        <!-- End -->
 
-      </div>
-      <!-- End -->
+        <!-- Checkbox-Input Start -->
+        <div class="input-wrapper" id="checkbox-wrapper">
+          <p>If you would us to contact you, Please check the best method to do so. <small>(Choose any that apply)</small></p>
 
-      <!-- Textarea Start -->
-      <div>
-        <label for="comment-area">Additional comments or suggestions?</label>
-        <textarea form="survey-form" name="comment-area" id="comment-area" placeholder="Please leave feedback here."></textarea>
-      </div>
-      <!-- End -->
+          <input type="checkbox" id="email-checkbox" name="contact-methods" value="email" />
+          <label for="email-checkbox">Email</label>
 
-      <!-- Submit Button -->
-      <button id="submit" type="submit">Submit</button>
+          <input type="checkbox" id="text-checkbox" name="contact-methods" value="text-message" />
+          <label for="text-checkbox">Text</label>
 
-    </form>
-    <!-- FORM End -->
-  </main>
-  <!-- MAIN End -->
+        </div>
+        <!-- End -->
+
+        <!-- Textarea Start -->
+        <div class="input-wrapper" id="comment-wrapper">
+          <label for="comment-area">Additional comments or suggestions?</label>
+          <textarea form="survey-form" name="comment-area" id="comment-area" placeholder="Please leave feedback here."></textarea>
+        </div>
+        <!-- End -->
+
+        <!-- Submit Button -->
+        <button id="submit" type="submit">Submit</button>
+
+      </form>
+      <!-- FORM End -->
+    </main>
+    <!-- MAIN End -->
 </body>
 
 </html>
